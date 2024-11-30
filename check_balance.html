@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Balance</title>
+    <link rel="stylesheet" href="./css/style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <!--Navbar with Bank name-->
+    <nav>
+        <div class="logo">CSCI 225 Federal Credit Union</div> <!-- Bank logo -->
+        <ul>
+            <!-- Navigation Links -->
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="transfer_funds.html">Transfer Funds</a></li>
+            <li><a href="deposit_funds.html">Deposit Funds</a></li>
+            <li><a href="transaction_history.html">Transaction History</a></li>
+            <li><a href="login.html" onclick="logout()">Sign Out</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Check Balance</h2>
+        <p>Your current balance is: <span id="balance">$10,000</span> <!-- Dynamic balance display -->
+        </p>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="./js/check_balance.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navbar with Bank Name -->
+    <nav>
+        <div class="logo">CSCI 225 Federal Credit Union</div> <!-- Added bank name as the logo -->
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="check_balance.html">Check Balance</a></li>
+            <li><a href="transfer_funds.html">Transfer Funds</a></li>
+            <li><a href="deposit_funds.html">Deposit Funds</a></li>
+            <li><a href="login.html" onclick="logout()">Sign Out</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Transaction History</h2>
+        <ul id="transaction-list" class="transaction-list"></ul>
+    </div>
+    <script src="./js/transaction_history.js"></script>
+</body>
+</html>

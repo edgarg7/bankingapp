@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Funds</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navbar with Bank Name -->
+    <nav>
+        <div class="logo">CSCI 225 Federal Credit Union</div> <!-- Added bank name as the logo -->
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="check_balance.html">Check Balance</a></li>
+            <li><a href="deposit_funds.html">Deposit Funds</a></li>
+            <li><a href="transaction_history.html">Transaction History</a></li>
+            <li><a href="login.html" onclick="logout()">Sign Out</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Transfer Funds</h2>
+        <form id="transfer-form">
+            <label for="transfer-amount">Amount:</label>
+            <input type="number" id="transfer-amount" placeholder="Enter amount to transfer" required>
+            <button type="button" onclick="transferFunds()">Transfer</button>
+        </form>
+        <p id="transfer-feedback" style="color: green; display: none;">Transfer successful!</p>
+    </div>
+    <script src="./js/transfer_funds.js"></script>
+</body>
+</html>

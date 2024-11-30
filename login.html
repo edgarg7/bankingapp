@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CSCI 225 Federal Credit Union</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navbar with Bank Name -->
+    <nav>
+        <div class="logo">CSCI 225 Federal Credit Union</div> <!-- Added bank name as the logo -->
+    </nav>
+    <div class="container">
+        <h2>Login to Your Account</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <button type="button" onclick="login()">Login</button>
+        </form>
+        <p id="login-feedback" style="color: red; display: none;">Invalid credentials. Please try again.</p>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+</html>
